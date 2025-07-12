@@ -1,0 +1,30 @@
+##Como primer paso crearemos una presentacion de texto.
+print ('Calculadora de distancia Euclidiana')
+print('Introduzca los primero datos:')
+##Segundo paso:realizaremos nuestro primer codigo para generar las primeras variables.
+
+x1 = float( input('x1: ')) #float se encarga de convertir texto en numeros decimales.
+y1 = float( input('y1: ')) #input pide al usuario insertar un dato como texto
+
+#es por eso que podemos observar el input dentro de float
+ #esto con el fin de que nuestro texto sea traducido a un  numero decimal.
+
+##Ahora podremos introducir los siguientes datos en base a la misma formula.         
+#Ahora indicaremos un texto para los siguientes datos.
+print('introduzca los siguientes datos')
+x2 = float(input('x2: '))
+y2 = float(input('y2: '))
+#Ahora realizaremos el calculo.
+#En el cual nos podemos basar en la ecuacion matematica,
+#solo que la traduciremos a codigo.
+import math
+diferencia_x =(x2-x1)**2
+diferencia_y =(y2-y1)**2
+distancia = math.sqrt(diferencia_x + diferencia_y)
+
+#Como ultimo paso mostraremos el resultado de nuestra operacion
+#usaremos f-string la cual nos permite introducir variables demtro del texto
+#Colocaremos las cordenadas de nuestra operacion dentro de '{}'
+#'distancia:.2f' en esta parte el 2 despues del punto nos indica cuando decimales mostrara despues del punto
+
+print(f"\nLa distancia euclidiana entre los puntos ({x1},{y1}) y ({x2},{y2}es:{distancia:.2f}")
