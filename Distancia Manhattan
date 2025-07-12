@@ -1,0 +1,23 @@
+#Para iniciar crearemos una presentacion de nuestra calculadora
+
+print ('Calculadora de distancia Manhattan')
+print ('Ingrese los valores correspondientes')
+##Primero identificaremos nuestros primeros valores haciendo uso del float e input
+#donde float convierte texto a un dato
+    #input pide que se ingrese un valor como texto
+x1 = float(input('x1: '))
+y1 = float(input('y1: '))
+##Ahora podremos introducir los siguientes datos en base a la misma formula.         
+#Ahora indicaremos un texto para los siguientes datos.
+print('introduzca los siguientes datos')
+x2 = float(input('x2: '))
+y2 = float(input('y2: '))
+#A continuacion realizaremos la operacion necesaria para el cálculo
+#abs es el valor absoluto de nuestro cálculo
+distancia = abs(x2 - x1)+ abs(y2 - y1)
+
+ #Como ultimo paso mostraremos el resultado de nuestra operacion
+#usaremos f-string la cual nos permite introducir variables demtro del texto
+#Colocaremos las cordenadas de nuestra operacion dentro de '{}'
+#'distancia:.2f' en esta parte el 2 despues del punto nos indica cuando decimales mostrara despues del punto
+print (f'\nLa distancia Manhattan entre los puntos ({x1},{y1}) y ({x2},{y2})es:{distancia:.2f}')
